@@ -70,9 +70,7 @@ footer.innerHTML = `
           </ul>
         </div>
         <div class="inner-contact"> <h2>CONTACT</h2>
-          <p><i class="fa-solid fa-location-dot"></i> 24IT1, Da Nang City</p>
-          <p><i class="fa-solid fa-phone"></i> 0787 540 572</p>
-          <p><i class="fa-solid fa-envelope"></i>datvq.24it@vku.udn.vn</p></div>
+          <p><i class="fa-solid fa-location-dot"></i> 24IT1, Da Nang City</p></div>
       </div>
       <div class="social">
       

@@ -31,7 +31,6 @@ header.innerHTML = `
         
               <div class="header__topbar__container--contacts py-2">
                 <div class="inner-social ">
-                  <span> +84 787 540 572</span>
                   <ul ">
                      <li ">
                         <a href="#" target="_blank">
