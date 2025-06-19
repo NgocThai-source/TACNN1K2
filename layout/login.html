@@ -1,0 +1,55 @@
+  <div id="auth-form-wrapper">
+  <div class="form container" id="container">
+    <div class="form-container sign-up">
+      <span class="close-form" onclick="closeForm()">✖</span>
+      <form>
+        <h1>Register</h1>
+        <div class="social-icons">
+          <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <span>or use email and password</span>
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <input id="signup-password" type="password" placeholder="Password">
+        <i id="signup-eye-toggle" class="fa-solid fa-eye-slash regit" onclick="togglePasswordVisibility('signup')"></i>
+        <button>Register</button>
+      </form>
+    </div>
+    <div class="form-container sign-in">
+
+      <form>
+        <h1>Login</h1>
+        <div class="social-icons">
+          <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <span>or use email and password</span>
+        <input type="email" placeholder="Email">
+        <input id="signin-password" type="password" placeholder="Password">
+        <i id="signin-eye-toggle" class="fa-solid fa-eye-slash" onclick="togglePasswordVisibility('signin')"></i>
+        <a class="Forgot-password" href="#">Forgot Password?</a>
+        <button id="loginButton">Login</button>
+      </form>
+    </div>
+    <div class="toggle-container">
+      <div class="toggle">
+        <div class="toggle-panel toggle-left">
+          <h1>Hello!</h1>
+          <p>Join WasteLess to create a waste-free environment ♻️</p>
+
+          <button class="hidden" id="login">Login</button>
+        </div>
+        <div class="toggle-panel toggle-right">
+          <span class="close-form" onclick="closeForm()">✖</span>
+          <h1>Welcome Back!</h1>
+          <p>Login to continue protecting our planet 🌍</p>
+          <button class="hidden" id="register">Register</button>
+        </div>
+      </div>
+    </div>
+  </div></div>

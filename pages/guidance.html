@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/form.css" />
+    <link rel="stylesheet" href="../assets/css/pagesCSS/guidance.css" />
+  <link rel="stylesheet" href="../assets/css/botChat.css">
+
+    <title>Detailed Waste Sorting Guide</title>
+    <link rel="icon" href="../assets/images/logo.png" type="image/png" />
+  </head>
+
+  <body>
+    <div class="header"></div>
+     <div id="auth-form-container"></div>
+
+
+    <main class="guide-page">
+      <!-- Hero Section -->
+      <section class="guide-hero" data-aos="fade-up">
+        <div class="container">
+          <h1 class="display-4">
+            Sort waste – Earn points – Receive rewards instantly!
+          </h1>
+          <p class="lead">
+            Every kg of recyclable waste you sort has value. Join WasteLess to protect the environment and enjoy benefits!
+          </p>
+          <div class="mt-4">
+            <a href="#basic-guide" class="btn btn-light mr-2"
+              >Basic Guide</a
+            >
+            <a href="#rewards" class="btn btn-outline-light">Discover Benefits</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Basic Guide Section -->
+      <section
+        id="basic-guide"
+        class="guide-categories py-5"
+        data-aos="fade-up"
+      >
+        <div class="container">
+          <h2 class="text-center mb-5">
+            <i class="fas fa-trash-alt mr-2"></i>Basic Waste Sorting
+          </h2>
+          <div class="trash-bin-table mb-5">
+            <h3 class="text-center mb-4">Bin Color Chart</h3>
+            <div class="table-responsive">
+              <table class="table table-bordered table-striped">
+                <thead class="bg-success text-white">
+                  <tr>
+                    <th>Bin Color</th>
+                    <th>Waste Type</th>
+                    <th>Examples</th>
+                    <th>Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <i class="fas fa-square text-success mr-2"></i>Green
+                    </td>
+                    <td>Recyclable waste</td>
+                    <td>Plastic bottles, clean paper</td>
+                    <td>Clean before disposal</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-square text-warning mr-2"></i>Yellow</td>
+                    <td>Special handling waste</td>
+                    <td>Greasy pizza boxes</td>
+                    <td>Put in separate bag</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-square text-danger mr-2"></i>Red</td>
+                    <td>Hazardous waste</td>
+                    <td>Batteries, light bulbs</td>
+                    <td>Do not break</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-square text-brown mr-2"></i>Brown</td>
+                    <td>Organic waste</td>
+                    <td>Fruit peels</td>
+                    <td>Home composting</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="category-tabs">
+            <button class="tab-btn active" data-category="recyclable">
+              <i class="fas fa-recycle mr-2"></i>Recyclable Waste
+            </button>
+            <button class="tab-btn" data-category="organic">
+              <i class="fas fa-leaf mr-2"></i>Organic Waste
+            </button>
+            <button class="tab-btn" data-category="hazardous">
+              <i class="fas fa-radiation-alt mr-2"></i>Hazardous Waste
+            </button>
+            <button class="tab-btn" data-category="other">
+              <i class="fas fa-exclamation-triangle mr-2"></i>Special Handling Waste
+            </button>
+          </div>
+
+          <!-- Recyclable Waste -->
+          <div class="category-content active" id="recyclable">
+            <div class="row">
+              <div class="col-lg-8">
+                <h3>
+                  <i class="fas fa-recycle text-success mr-2"></i>What is Recyclable Waste?
+                </h3>
+                <p>
+                  These are types of waste that can be recycled into new materials or products, including:
+                </p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4 class="mt-4">✅ Should go in recycling bin</h4>
+                    <ul class="item-list">
+                      <li>
+                        <i class="fas fa-check-circle text-success mr-2"></i
+                        >Plastic bottles (PET, HDPE) cleaned
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle text-success mr-2"></i>Aluminum and metal cans (soda, beer)
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle text-success mr-2"></i
+                        >Office paper, newspapers, magazines
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle text-success mr-2"></i>Cardboard (flattened)
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle text-success mr-2"></i
+                        >Glass bottles and jars (unbroken)
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle text-success mr-2"></i>Paper milk cartons (rinsed)
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h4 class="mt-4">❌ Should not go in</h4>
+                    <ul class="item-list">
+                      <li>
+                        <i class="fas fa-times-circle text-danger mr-2"></i>Plastic without recycling symbol
+                      </li>
+                      <li>
+                        <i class="fas fa-times-circle text-danger mr-2"></i>Food-soiled paper (dirty pizza boxes)
+                      </li>
+                      <li>
+                        <i class="fas fa-times-circle text-danger mr-2"></i>Paper cups with plastic lining
+                      </li>
+                      <li>
+                        <i class="fas fa-times-circle text-danger mr-2"></i
+                        >Mirrors, window glass
+                      </li>
+                      <li>
+                        <i class="fas fa-times-circle text-danger mr-2"></i>Multi-layer packaging (noodle packets, snacks)
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <h4 class="mt-4">Common Recycling Symbols</h4>
+                <div class="recycle-symbols">
+                  <div class="symbol-card">
+                    <div><i class="fas fa-recycle mr-2"></i>PET (number 1)</div>
+                    <small>Water bottles, soft drinks</small>
+                  </div>
+                  <div class="symbol-card">
+                    <div><i class="fas fa-recycle mr-2"></i>HDPE (number 2)</div>
+                    <small>Milk jugs, shampoo bottles</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card shadow-sm">
+                  <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">
+                      <i class="fas fa-lightbulb mr-2"></i>Correct Handling
+                    </h5>
+                  </div>
+                  <div class="card-body">
+                    <ol class="step-list">
+                      <li>Clean thoroughly (for food containers)</li>
+                      <li>Remove components (bottle caps, labels)</li>
+                      <li>Flatten to save space</li>
+                      <li>Sort by material if possible</li>
+                      <li>
+                        Place in recycling bin or take to collection point
+                      </li>
+                    </ol>
+                    <div class="note-box mt-3">
+                      <h6>
+                        <i class="fas fa-exclamation-triangle mr-2"></i>Important note:
+                      </h6>
+                      <p class="mb-0">
+                        Plastic bottles should be capped when recycled to prevent them from being mixed with regular waste.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card shadow-sm mt-4">
+                  <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">
+                      <i class="fas fa-map-marker-alt mr-2"></i>Collection Point Near You
+                    </h5>
+                  </div>
+                  <div class="card-body">
+                    <p>Find recycling bin or collection point:</p>
+                    <a
+                      href="../pages/statistics.html"
+                      class="btn btn-sm btn-outline-primary"
+                    >
+                      <i class="fas fa-map-marked-alt mr-2"></i>Open Map
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Organic Waste Section -->
+          <div class="category-content" id="organic">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>
+                  <i class="fas fa-leaf text-body mr-2"></i>What is Organic Waste?
+                </h3>
+                <p>
+                  These are types of waste that can be composted:
+                </p>
+                <h4 class="mt-4">✅ Should go in organic bin</h4>
+                <ul class="item-list">
+                  <li>
+                    <i class="fas fa-check-circle text-success mr-2"></i>Leftover food (vegetables, meat, rice)
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle text-success mr-2"></i>Fruit and vegetable peels
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle text-success mr-2"></i>Coffee grounds, tea leaves
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle text-success mr-2"></i>Leafy greens, dry grass
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle text-success mr-2"></i>Rotten fruits
+                  </li>
+                </ul>
+                <h4 class="mt-4">❌ Should not go in</h4>
+                <ul class="item-list">
+                  <li>
+                    <i class="fas fa-times-circle text-danger mr-2"></i>Large animal bones
+                  </li>
+                  <li>
+                    <i class="fas fa-times-circle text-danger mr-2"></i>Used cooking oil
+                  </li>
+                  <li>
+                    <i class="fas fa-times-circle text-danger mr-2"></i>Shells, hard shells
+                  </li>
+                  <li>
+                    <i class="fas fa-times-circle text-danger mr-2"></i>Nylon bags, plastic packaging
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <div class="card shadow-sm">
+                  <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">
+                      <i class="fas fa-compost mr-2"></i>Home Composting Guide
+                    </h5>
+                  </div>
+                  <div class="card-body">
+                    <ol class="step-list">
+                      <li>Prepare compost bin with lid</li>
+                      <li>Separate organic waste from other waste</li>
+                      <li>Cut organic waste into small pieces (3-5cm) for quick decomposition</li>
+                      <li>Mix with wood chips or dry leaves in a 2:1 ratio</li>
+                      <li>Turn 2-3 times/week</li>
+                      <li>After 2-3 months, you can use compost</li>
+                    </ol>
+                    <div class="note-box mt-3">
+                      <h6><i class="fas fa-tint mr-2"></i>Tip:</h6>
+                      <p class="mb-0">
+                        Add ground eggshells to compost for calcium supplement for plants.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hazardous Waste Section -->
+          <div class="category-content" id="hazardous">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>
+                  <i class="fas fa-radiation-alt text-danger mr-2"></i>What is Hazardous Waste?
+                </h3>
+                <p>
+                  These are types of waste that contain harmful chemicals or pose a risk to human health and the environment:
+                </p>
+                <h4 class="mt-4">✅ Should go in hazardous waste bin</h4>
+                <ul class="item-list">
+                  <li>
+                    <i class="fas fa-check-circle text-success mr-2"></i>Batteries, chargers
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle text-success mr-2"></i>Fluorescent and LED bulbs, broken
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle text-success mr-2"></i>Expired medicines
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle text-success mr-2"></i>Paints, chemical solvents
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle text-success mr-2"></i>Strong cleaning agents, weed killers
+                  </li>
+                </ul>
+                <h4 class="mt-4">❌ Should not go in</h4>
+                <ul class="item-list">
+                  <li>
+                    <i class="fas fa-times-circle text-danger mr-2"></i>Regular household waste
+                  </li>
+                  <li>
+                    <i class="fas fa-times-circle text-danger mr-2"></i>Recyclable waste
+                  </li>
+                  <li>
+                    <i class="fas fa-times-circle text-danger mr-2"></i>Organic waste
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <div class="card shadow-sm">
+                  <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">
+                      <i class="fas fa-lightbulb mr-2"></i>Correct Handling
+                    </h5>
+                  </div>
+                  <div class="card-body">
+                    <ol class="step-list">
+                      <li>
+                        Ensure batteries and bulbs are not broken before disposal
+                      </li>
+                      <li>
+                        Take to designated hazardous waste collection points
+                      </li>
+                      <li>
+                        Do not mix harmful substances with regular waste to prevent contamination
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Other Waste Section -->
+          <div class="category-content" id="other">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>
+                  <i class="fas fa-exclamation-triangle text-warning mr-2"></i>What is Special Handling Waste?
+                </h3>
+                <p>
+                  These are types of waste that do not belong to recyclable, organic, or hazardous waste categories, but need separate handling due to difficulty in recycling or potential impact on the environment if handled incorrectly, for example:
+                </p>
+                <h4 class="mt-4">✅ Should go in special handling waste bin</h4>
+                <ul class="item-list">
+                  <li>
+                    <i class="fas fa-check-circle text-success mr-2"></i>Household items, broken, cannot be repaired
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle text-success mr-2"></i>Nylon bags, cannot be recycled
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle text-success mr-2"></i>Used toothbrush, cannot be repaired
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle text-success mr-2"></i>Broken toys
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle text-success mr-2"></i>Non-recyclable packaging (bubble wrap, fleece)
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle text-success mr-2"></i>Food packaging with oil, foam
+                  </li>
+                </ul>
+                <h4 class="mt-4">❌ Should not go in</h4>
+                <ul class="item-list">
+                  <li>
+                    <i class="fas fa-times-circle text-danger mr-2"></i>Recyclable waste
+                  </li>
+                  <li>
+                    <i class="fas fa-times-circle text-danger mr-2"></i>Organic waste
+                  </li>
+                  <li>
+                    <i class="fas fa-times-circle text-danger mr-2"></i>Hazardous waste
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <div class="card shadow-sm">
+                  <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">
+                      <i class="fas fa-lightbulb mr-2"></i>Correct Handling
+                    </h5>
+                  </div>
+                  <div class="card-body">
+                    <ol class="step-list">
+                      <li>
+                        Separate special handling waste and place in separate bin (yellow)
+                      </li>
+                      <li>
+                        Ensure non-recyclable items are sealed to prevent leakage or spreading to the environment
+                      </li>
+                      <li>
+                        Do not mix with recyclable, organic, or hazardous waste
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reward System Section -->
+      <section
+        id="rewards"
+        class="reward-system py-5 bg-light"
+        data-aos="fade-up"
+      >
+        <div class="container">
+          <h2 class="text-center mb-5">
+            <i class="fas fa-gift mr-2"></i>Reward System
+          </h2>
+
+          <!-- 3-Step Process -->
+          <div class="process-steps mb-5">
+            <h3 class="text-center mb-4">3-Step Reward Process</h3>
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="step-card shadow-sm text-center">
+                  <i class="fas fa-camera fa-3x mb-3"></i>
+                  <h4>Step 1: Take Photo</h4>
+                  <p>
+                    Use WasteLess AI to check waste type through image.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="step-card shadow-sm text-center">
+                  <i class="fas fa-map-marker-alt fa-3x mb-3"></i>
+                  <h4>Step 2: Bring to Collection Point</h4>
+                  <p>Scan QR code at collection point for automatic points.</p>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="step-card shadow-sm text-center">
+                  <i class="fas fa-gift fa-3x mb-3"></i>
+                  <h4>Step 3: Redeem Rewards</h4>
+                  <p>Choose reward from partner list on app.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Points Conversion Table -->
+          <div class="points-table mb-5">
+            <h3 class="text-center mb-4">Points Conversion Table</h3>
+            <div class="table-responsive">
+              <table class="table table-bordered table-striped">
+                <thead class="bg-success text-white">
+                  <tr>
+                    <th>Waste Type</th>
+                    <th>Points/kg</th>
+                    <th>Examples</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Paper</td>
+                    <td>50</td>
+                    <td>10kg = 500 points</td>
+                  </tr>
+                  <tr>
+                    <td>Nylon PET</td>
+                    <td>30</td>
+                    <td>5kg = 150 points</td>
+                  </tr>
+                  <tr>
+                    <td>Batteries</td>
+                    <td>100</td>
+                    <td>1kg = 100 points</td>
+                  </tr>
+                  <tr>
+                    <td>Electronics</td>
+                    <td>200</td>
+                    <td>1 laptop = 200 points</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Rewards Catalog -->
+          <div class="rewards-catalog mb-5">
+            <h3 class="text-center mb-4">Rewards Catalog</h3>
+            <div class="row">
+              <div class="col-md-3 mb-4">
+                <div class="reward-card shadow-sm text-center">
+                  <i class="fas fa-ticket-alt fa-3x mb-3"></i>
+                  <h5>Voucher</h5>
+                  <p>10% discount at organic store (500 points)</p>
+                </div>
+              </div>
+              <div class="col-md-3 mb-4">
+                <div class="reward-card shadow-sm text-center">
+                  <i class="fas fa-water fa-3x mb-3"></i>
+                  <h5>Green Product</h5>
+                  <p>Inox water bottle (1000 points)</p>
+                </div>
+              </div>
+              <div class="col-md-3 mb-4">
+                <div class="reward-card shadow-sm text-center">
+                  <i class="fas fa-leaf fa-3x mb-3"></i>
+                  <h5>Plant</h5>
+                  <p>Lotus (1500 points)</p>
+                </div>
+              </div>
+              <div class="col-md-3 mb-4">
+                <div class="reward-card shadow-sm text-center">
+                  <i class="fas fa-hand-holding-heart fa-3x mb-3"></i>
+                  <h5>Donation</h5>
+                  <p>Support planting trees (from 200 points)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Personal Achievements -->
+          <div class="achievements mb-5">
+            <h3 class="text-center mb-4">Personal Achievements</h3>
+            <div class="progress mb-3">
+              <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                style="width: 60%"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                1200/2000 points
+              </div>
+            </div>
+            <p class="text-center">Still need 800 points for 50k voucher!</p>
+            <div class="badges d-flex justify-content-center gap-3">
+              <div class="badge-card text-center">
+                <i class="fas fa-seedling fa-2x mb-2"></i>
+                <p>Newbie (0-500 points)</p>
+              </div>
+              <div class="badge-card text-center active">
+                <i class="fas fa-recycle fa-2x mb-2"></i>
+                <p>Eco Warrior (501-2000)</p>
+              </div>
+              <div class="badge-card text-center locked">
+                <i class="fas fa-globe fa-2x mb-2"></i>
+                <p>Planet Hero (2000+)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Advanced Tips Section -->
+      <section id="advanced" class="advanced-tips py-5" data-aos="fade-up">
+        <div class="container">
+          <h2 class="text-center mb-5">
+            <i class="fas fa-graduation-cap mr-2"></i>Advanced Sorting Tips
+          </h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="tip-card shadow-sm mb-4">
+                <div class="tip-header">
+                  <i class="fas fa-shopping-bag"></i>
+                  <h4>Reduce Waste from Source</h4>
+                </div>
+                <div class="tip-body">
+                  <ul>
+                    <li>Use cloth bags when shopping</li>
+                    <li>Choose products with minimal packaging</li>
+                    <li>Buy in bulk to reduce packaging</li>
+                    <li>Prioritize reusable products</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="tip-card shadow-sm mb-4">
+                <div class="tip-header">
+                  <i class="fas fa-utensils"></i>
+                  <h4>Waste Handling for Food</h4>
+                </div>
+                <div class="tip-body">
+                  <ul>
+                    <li>Plan meals to reduce leftover food</li>
+                    <li>Store food properly</li>
+                    <li>Utilize leftover food for new ingredients</li>
+                    <li>Freeze food nearing expiration</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq-section py-5 bg-light" data-aos="fade-up">
+        <div class="container">
+          <h2 class="text-center mb-5">
+            <i class="fas fa-question-circle mr-2"></i>Frequently Asked Questions
+          </h2>
+          <div class="accordion" id="faqAccordion">
+            <div class="card">
+              <div class="card-header" id="faq1">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapse1"
+                    aria-expanded="true"
+                    aria-controls="collapse1"
+                  >
+                    When is waste rejected?
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapse1"
+                class="collapse show"
+                aria-labelledby="faq1"
+                data-parent="#faqAccordion"
+              >
+                <div class="card-body">
+                  Waste is rejected if it's food-soiled or incorrectly categorized.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="faq2">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapse2"
+                    aria-expanded="false"
+                    aria-controls="collapse2"
+                  >
+                    Are points expired?
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapse2"
+                class="collapse"
+                aria-labelledby="faq2"
+                data-parent="#faqAccordion"
+              >
+                <div class="card-body">
+                  Points are valid for 6 months from the time of accumulation.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="faq3">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapse3"
+                    aria-expanded="false"
+                    aria-controls="collapse3"
+                  >
+                    Where can I redeem rewards?
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapse3"
+                class="collapse"
+                aria-labelledby="faq3"
+                data-parent="#faqAccordion"
+              >
+                <div class="card-body">
+                  You can redeem rewards at collection points or online through the WasteLess app.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Quiz Section -->
+      <section class="quiz-section py-5" data-aos="fade-up">
+        <div class="container">
+          <h2 class="text-center mb-5">
+            <i class="fas fa-question-circle mr-2"></i>Test Your Knowledge
+          </h2>
+          <div class="quiz-container">
+            <div class="quiz-question">
+              <p>
+                1. What should you do with a plastic bottle after using it?
+              </p>
+              <div class="quiz-options">
+                <button class="quiz-option" data-correct="true">
+                  Clean and put in recycling bin
+                </button>
+                <button class="quiz-option">Put in regular trash</button>
+                <button class="quiz-option">Throw away</button>
+              </div>
+            </div>
+            <div class="quiz-result mt-4 d-none">
+              <h4>Result: <span id="score">0</span>/1</h4>
+              <p id="result-message"></p>
+              <button class="btn btn-primary" id="retry-btn">Try Again</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Download Resources -->
+      <section
+        class="download-section py-5 bg-success text-white"
+        data-aos="fade-up"
+      >
+        <div class="container text-center">
+          <h2><i class="fas fa-file-download mr-2"></i>Useful Resources</h2>
+          <p class="lead">Download for reference when needed</p>
+          <div class="row mt-4">
+            <div class="col-md-4 mb-3">
+              <div class="download-card">
+                <i class="fas fa-file-pdf fa-3x mb-3"></i>
+                <h5>Waste Sorting Guide</h5>
+                <p>PDF • 2.4MB</p>
+                <button class="btn btn-light btn-sm">Download</button>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="download-card">
+                <i class="fas fa-image fa-3x mb-3"></i>
+                <h5>Guidance Poster</h5>
+                <p>JPG • 1.8MB</p>
+                <button class="btn btn-light btn-sm">Download</button>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="download-card">
+                <i class="fas fa-mobile-alt fa-3x mb-3"></i>
+                <h5>WasteLess App</h5>
+                <p>Android & iOS</p>
+                <button class="btn btn-light btn-sm">Download App</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  <div class="footer"></div>
+    <div class="chatbot"></div>
+
+    <!-- Scripts -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../layout/header.js" defer></script>
+    <script src="../layout/footer.js" defer></script>
+    <script>
+      // Initialize AOS
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+          duration: 800,
+          easing: "ease-in-out",
+          once: true,
+        });
+
+        // Tab functionality
+        document.querySelectorAll(".tab-btn").forEach((btn) => {
+          btn.addEventListener("click", function () {
+            document
+              .querySelectorAll(".tab-btn")
+              .forEach((b) => b.classList.remove("active"));
+            this.classList.add("active");
+            document
+              .querySelectorAll(".category-content")
+              .forEach((content) => content.classList.remove("active"));
+            const categoryId = this.getAttribute("data-category");
+            document.getElementById(categoryId).classList.add("active");
+          });
+        });
+
+        // Quiz functionality
+        document.querySelectorAll(".quiz-option").forEach((option) => {
+          option.addEventListener("click", function () {
+            const isCorrect = this.getAttribute("data-correct") === "true";
+            this.style.backgroundColor = isCorrect ? "#4CAF50" : "#f44336";
+            this.style.color = "white";
+            const result = document.querySelector(".quiz-result");
+            if (result) {
+              result.classList.remove("d-none");
+              const scoreElement = document.getElementById("score");
+              const messageElement = document.getElementById("result-message");
+              if (scoreElement && messageElement) {
+                scoreElement.textContent = isCorrect ? "1" : "0";
+                messageElement.textContent = isCorrect
+                  ? "Correct! Keep sorting waste correctly."
+                  : "Wrong! Plastic bottles need to be cleaned before disposal.";
+              }
+            }
+          });
+        });
+
+        // Retry button functionality
+        const retryBtn = document.getElementById("retry-btn");
+        if (retryBtn) {
+          retryBtn.addEventListener("click", function () {
+            location.reload();
+          });
+        }
+      });
+    </script>
+      <script>
+    fetch('../layout/login.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('auth-form-container').innerHTML = data;
+        const script = document.createElement('script');
+        script.src = '../assets/js/form.js';
+        document.body.appendChild(script);
+      });
+  </script>
+  <script src="../layout/chatbot.js"></script>
+
+  </body>
+</html>
